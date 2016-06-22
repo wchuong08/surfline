@@ -1,0 +1,15 @@
+<table>
+  	<thead>
+  		<tr>
+  			<th>Station ID and Name</th>
+  			<th>Latitude/Longitude and Current Readings</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr ng-repeat="bouy in bouysList | filter: favoriteFilter track by $index">
+  			<td>{{bouy.title}}</td>
+  			<td ng-bind-html="trustAsHtml(bouy.content)"></td>
+  		</tr>
+  	</tbody>
+</table>
+

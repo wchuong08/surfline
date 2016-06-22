@@ -1,0 +1,15 @@
+<table>
+  	<thead>
+  		<tr>
+  			<th>Favorite</th>
+  			<th>Station ID and Name</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr ng-repeat="bouy in bouysList track by $index">
+  			<td><input type="checkbox" ng-model="bouy.favorite"</td>
+  			<td>{{bouy.title}}</td>
+  		</tr>
+  	</tbody>
+</table>
+
